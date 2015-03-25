@@ -42,6 +42,11 @@ $(document).ready(function () {
 $('#submit-contact-success').hide();
 $('#submit-contact-error').hide();
 
+var onRecaptcha = function(response) {
+  $('#submit-contact').prop('disabled', false);
+}
+$('#submit-contact').prop('disabled', true);
+
 $('#form-contact').submit(function (event) {
   event.preventDefault();
   var $inputs = $('#form-contact :input');
