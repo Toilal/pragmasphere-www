@@ -1,0 +1,34 @@
+{
+  "name": "pragmasphere-www",
+  "version": "0.0.0",
+  "authors": [
+    "remi.alvergnat@pragmasphere.com"
+  ],
+  "private": true,
+  "license": "MIT",
+  "homepage": "http://www.pragmasphere.com",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.3",
+    "modernizr": "~2.8.3",
+    "classie": "~1.0.1",
+    "wow": "~1.0.3",
+    "stickUp": "~0.5.7",
+    "bootstrap": "~3.3.4",
+    "animate.css": "~3.2.5",
+    "jquery-smooth-scroll": "~1.5.5",
+    "install": "~1.0.4",
+    "bootstrap-hover-dropdown": "~2.1.3",
+    "components-font-awesome": "~4.3.0"
+  },
+  "devDependencies": {
+    "modernizr": "~2.8.3"
+  }
+}
