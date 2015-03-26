@@ -32,7 +32,7 @@ $(document).ready(function () {
       if ($target.length) {
         var navBar = $('.navbar-default');
 
-        var targetOffset = $target.offset().top - 15;
+        var targetOffset = $target.offset().top - 30;
         if (!navBar.hasClass('isStuck')) {
           targetOffset = targetOffset - navBar.height();
         }
