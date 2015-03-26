@@ -468,7 +468,7 @@ p {
 }
 
 @media only screen and (max-height: 640px) and (min-width: 768px) {
-    .lead { display: none; }
+    .intro-header .lead { display: none; }
 }
 
 @media only screen and (max-height: 540px) and (min-width: 768px) {
@@ -484,7 +484,11 @@ p {
 }
 
 @media only screen and (max-height: 480px) and (max-width: 768px) {
-    .lead { display: none; }
+    .intro-header .lead { display: none; }
+}
+
+@media only screen and (max-height: 438px) and (max-width: 768px) {
+    .button_down { display: none; }
 }
 
 li {
