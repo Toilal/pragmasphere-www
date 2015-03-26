@@ -702,8 +702,8 @@ label {
 
 .container > .navbar-header,
 .container > .navbar-collapse {
-    margin-right: -21px;
-    margin-left: -21px;
+    margin-right: 21px;
+    margin-left: 21px;
 }
 
 @media (min-width: 768px) {
@@ -1112,4 +1112,9 @@ blockquote p {
 
 #competences {
     margin-top: 70px;
+}
+
+.navbar-default .container {
+    padding-right: 0;
+    padding-left: 0;
 }
