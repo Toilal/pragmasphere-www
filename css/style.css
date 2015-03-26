@@ -702,9 +702,27 @@ label {
 
 .container > .navbar-header,
 .container > .navbar-collapse {
-    margin-right: 21px;
-    margin-left: 21px;
+    margin-right: 5px;
+    margin-left: 5px;
 }
+
+@media (max-width: 767px) {
+    .navbar-header > .navbar-toggle  {
+        padding-left: 0;
+        padding-right: 5px;
+    }
+    .navbar-header > .navbar-brand {
+        padding-left: 5px;
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 299px) {
+    .navbar-header > .navbar-brand {
+        display: none;
+    }
+}
+
 
 @media (min-width: 768px) {
     .container > .navbar-header,
