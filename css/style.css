@@ -876,11 +876,8 @@ label {
 .dropdown-menu {
     background-color: #f3f4f5;
     border: none;
-    display: block;
     margin-top: 8px;
-    opacity: 0;
     padding: 0;
-    visibility: hidden;
     -webkit-box-shadow: none;
     box-shadow: none;
     -webkit-transition: 0.25s;
@@ -1086,4 +1083,21 @@ blockquote p {
 
 .social-button {
     padding: 5px
+}
+
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+    background-color: #ECF0F1;
+}
+
+.navbar-default .navbar-nav > .open > a:hover,
+.dropdown-menu li > a:hover {
+    color: #1abc9c;
+}
+
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:focus {
+    background-color: #ECF0F1;
+    color: #34495e;
 }
