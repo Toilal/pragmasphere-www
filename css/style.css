@@ -70,39 +70,6 @@ body, html {
     color: white
 }
 
-.lead {
-    font-size: 16px;
-    font-weight: 400;
-}
-
-.lead2 {
-    margin-bottom: 30px;
-    margin-top: 20px;
-    font-size: 18px;
-    line-height: 1.46428571;
-    font-weight: 300;
-}
-
-.lead3 {
-    margin-bottom: 0px;
-    margin-top: 0px;
-    font-size: 16px;
-    color: #8D8D8D;
-    line-height: 1.46428571;
-    font-weight: 300;
-}
-
-.h1_home {
-    font-size: 80px;
-    font-family: arvo;
-    font-weight: 300;
-    letter-spacing: 6px;
-}
-
-.h3_home {
-    font-weight: 300;
-}
-
 #preloader {
     position: fixed;
     top: 0;
@@ -151,12 +118,8 @@ body, html {
     border-color: rgba(52, 73, 94, 0);
 }
 
-.tworow {
-    margin-top: 90px;
-}
-
 .social {
-    font-size: 30px;
+    font-size: 2em;
     text-decoration: none;
     list-style-type: none;
     color: #1abc9c;
@@ -215,28 +178,20 @@ body, html {
     color: #ECEBEB;
 }
 
-.navbar-brand {
-    font-family: arvo;
-    letter-spacing: 3px;
-    font-weight: 400 !important;
-}
-
 .intro-header {
     height: 100%; /* Full PAge */
     padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
     padding-bottom: 50px;
     color: #f8f8f8;
-    background: url(../img/intro.png) no-repeat center center;
+    background-color: #172c40;
+    background-image: url(../img/intro.png);
+    background-repeat: no-repeat;
+    background-position: center center;
     background-size: cover;
     text-align: center;
 }
 
-.list-inline {
-    margin-top: 30px;
-}
-
 .network-name {
-    font-size: 14px;
     font-weight: 400;
     letter-spacing: 1.5px;
 }
@@ -285,36 +240,13 @@ body, html {
     -o-transform: rotate(360deg);
 }
 
-/* Tablet */
-@media only screen and (min-width: 768px) and (max-width: 959px) {
-    h1 {
-        font-size: 50px;
-    }
-
-    h3 {
-        font-size: 20px;
-    }
-}
-
-/* All Mobile Sizes (devices and browser) */
-@media only screen and (max-width: 767px) {
-    h1 {
-        font-size: 50px;
-    }
-
-    h3 {
-        font-size: 20px;
-    }
-}
-
 footer {
     background-color: #f8f8f8;
 }
 
 @media (max-width: 767px) {
     ul.intro-social-buttons > li {
-        display: block;
-        margin-bottom: 20px;
+        margin: 3px;
         padding: 0;
     }
 
@@ -327,8 +259,7 @@ body {
     height: 100%;
     width: 100%;
     font-family: "Lato", Helvetica, Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.72222;
+    line-height: 1.5;
     color: #34495e;
     background-color: #ffffff;
 }
@@ -356,7 +287,8 @@ a:focus {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
     font-family: inherit;
     font-weight: 700;
     line-height: 1.1;
@@ -365,27 +297,190 @@ h3 {
 
 h1,
 h2,
-h3 {
-    margin-top: 30px;
-    margin-bottom: 5px;
+h3,
+h4 {
+    margin-top: 22px;
+    margin-bottom: 15px;
 }
 
 h1 {
-    font-size: 80px;
+    font-size: 6em;
+}
+
+.intro-header h1 {
+    font-family: arvo;
+    font-weight: 300;
+    letter-spacing: 6px;
 }
 
 h2 {
-    font-size: 63px;
+    font-size: 5em;
 }
 
 h3 {
-    font-size: 30px;
+    font-size: 2.5em;
+}
+
+h4 {
+    font-size: 2em;
+}
+
+.intro-header h3 {
+    font-weight: 300;
 }
 
 p {
-    font-size: 16px;
-    line-height: 1.72222;
+    line-height: 1.5;
     margin: 0 0 15px;
+}
+
+.lead {
+    margin-bottom: 30px;
+    margin-top: 20px;
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+.intro-header .lead {
+    font-weight: normal;
+}
+
+.tworow {
+    margin-top: 90px;
+}
+
+.navbar-brand {
+    font-size: 2em;
+    font-weight: 300;
+    font-family: arvo;
+    letter-spacing: 3px;
+}
+
+.a-propos {
+    font-size: 1.5em;
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    h1 {
+        font-size: 5em;
+    }
+
+    h2 {
+        font-size: 4em;
+    }
+
+    h3 {
+        font-size: 3em;
+    }
+
+    h4 {
+        font-size: 2em;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+        margin-top: 15px;
+        margin-bottom: 12px;
+    }
+
+    .a-propos {
+        font-size: 1.4em;
+    }
+
+    .lead {
+        margin-bottom: 18px;
+        margin-top: 14px;
+        font-size: 1.4em;
+        font-weight: 300;
+    }
+
+    .tworow {
+        margin-top: 40px;
+    }
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px), only screen and (max-height: 610px) {
+    h1 {
+        font-size: 4em;
+    }
+
+    .intro-header {
+        background-image: none;
+    }
+
+    .intro-header h1 {
+        font-size: 3em;
+        font-family: arvo;
+        font-weight: 300;
+        letter-spacing: normal;
+    }
+
+    h2 {
+        font-size: 3em;
+    }
+
+    h3 {
+        font-size: 2em;
+    }
+
+    h4 {
+        font-size: 1.6em;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+        margin-top: 10px;
+        margin-bottom: 8px;
+    }
+
+    .a-propos {
+        font-size: 1.2em;
+    }
+
+    .lead {
+        margin-top: 5px;
+        margin-bottom: 10px;
+        font-size: 1.2em;
+        font-weight: 300;
+    }
+
+    .tworow {
+        margin-top: 20px;
+    }
+
+    .navbar-brand {
+        letter-spacing: 2px;
+    }
+}
+
+@media only screen and (max-height: 900px) and (min-width: 768px) {
+    .intro-skills-button { display: none; }
+}
+
+@media only screen and (max-height: 810px) and (min-width: 768px) {
+    .intro-social-buttons { display: none; }
+}
+
+@media only screen and (max-height: 730px) and (min-width: 768px) {
+    .lead { display: none; }
+}
+
+@media only screen and (max-height: 760px) and (max-width: 768px) {
+    .intro-skills-button { display: none; }
+}
+
+@media only screen and (max-height: 680px) and (max-width: 768px) {
+    .intro-social-buttons { display: none; }
+}
+
+@media only screen and (max-height: 480px) and (max-width: 768px) {
+    .lead { display: none; }
 }
 
 li {
@@ -394,14 +489,6 @@ li {
 
 .white {
     color: white;
-}
-
-.lead {
-    margin-bottom: 30px;
-    margin-top: 20px;
-    font-size: 20px;
-    line-height: 1.46428571;
-    font-weight: 300;
 }
 
 @media (min-width: 768px) {
@@ -424,7 +511,6 @@ address {
 }
 
 .btn {
-    font-size: 15px;
     font-weight: normal;
     line-height: 1.4;
     border-radius: 4px;
@@ -476,21 +562,18 @@ address {
 
 .btn-lg {
     padding: 10px 19px;
-    font-size: 17px;
     line-height: 1.471;
     border-radius: 6px;
 }
 
 textarea {
-    font-size: 20px;
     line-height: 24px;
     padding: 5px 11px;
 }
 
 label {
-    font-weight: normal;
-    font-size: 15px;
-    line-height: 2.4;
+    font-size: 1.4em;
+    line-height: 1.5;
 }
 
 .form-control:-moz-placeholder {
@@ -510,7 +593,6 @@ label {
     border: 2px solid #bdc3c7;
     color: #34495e;
     font-family: "Lato", Helvetica, Arial, sans-serif;
-    font-size: 15px;
     line-height: 1.467;
     padding: 8px 12px;
     height: 42px;
@@ -579,7 +661,6 @@ label {
 
 .input-group-addon {
     padding: 10px 12px;
-    font-size: 15px;
     color: #ffffff;
     text-align: center;
     background-color: #bdc3c7;
@@ -625,12 +706,6 @@ label {
     }
 }
 
-.navbar-brand {
-    font-size: 24px;
-    line-height: 1.042;
-    font-weight: 700;
-}
-
 .navbar-toggle {
     border: none;
     color: #34495e;
@@ -644,7 +719,7 @@ label {
     color: #34495e;
     content: "\e00c";
     font-family: "Flat-UI-Icons";
-    font-size: 22px;
+    font-size: 1.8em;
     font-style: normal;
     font-weight: normal;
     -webkit-font-smoothing: antialiased;
@@ -677,7 +752,6 @@ label {
 }
 
 .navbar-nav > li > a {
-    font-size: 16px;
     line-height: 23px;
     font-weight: 700;
 }
@@ -744,6 +818,7 @@ label {
 .navbar-default .navbar-collapse {
     border-color: #e5e9ea;
     border-width: 2px;
+    overflow: hidden;
 }
 
 .navbar-default .navbar-nav > li > a {
@@ -864,29 +939,20 @@ label {
 /* custom */
 .pos-bottom {
     position: absolute;
-    bottom: 8%;
+    bottom: 3%;
 }
 
 .pos-top {
     position: absolute;
-    top: 7%;
+    top: 3%;
 }
 
 .my-picture-container {
-    margin: 50px auto 10px auto;
+    margin: 25px auto 15px auto;
 }
 
 .my-picture {
-    width: 200px;
-    height: 200px;
-    border-radius: 150px;
-    -webkit-border-radius: 150px;
-    -moz-border-radius: 150px;
-    background: url('../img/remi-alvergnat.jpg') no-repeat;
-    box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-    -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-    margin: 0 auto 0 auto;
+    border: solid #46607a 4px;
 }
 
 .icon-size-100 {
@@ -931,34 +997,42 @@ label {
     display: block !important;
 }
 
-.green-link {
+.green-link, .green-link a {
     color: #1abc9c;
+    font-weight: bold;
+}
+
+.green-link a:hover,
+.green-link a:focus {
+    color: #34495e;
+    text-decoration: none;
 }
 
 .footer {
+    background: #34495e
+}
+
+.footer a:hover {
     color: #1abc9c;
+}
+
+.footer .list-inline {
+    margin: 0;
 }
 
 .clear-both {
     clear: both;
 }
 
-.h3_home {
-    line-height: 1.3em;
-}
-
-footer {
-    background: #34495e
-}
-
-footer a:hover {
-    color: #1abc9c;
+#submit-contact {
+    font-size: 1.8em;
+    width: 320px;
+    font-weight: bolder;
 }
 
 @media only screen and (max-width: 767px) {
-    .h1_home {
-        font-size: 40px;
-        letter-spacing: normal;
+    .my-picture-container {
+        margin: 15px auto 15px auto;
     }
 
     .pos-top {
@@ -966,7 +1040,11 @@ footer a:hover {
     }
 
     .pos-bottom {
-        bottom: 5px;
+        bottom: 15px;
+    }
+
+    #submit-contact {
+        width: 100%;
     }
 }
 
@@ -1002,8 +1080,10 @@ blockquote p {
     margin-right: 50px;
 }
 
-#submit-contact {
-    font-size: 1.8em;
-    width: 320px;
-    font-weight: bolder;
+.a-propos {
+    color: #e9e9e9;
+}
+
+.social-button {
+    padding: 5px
 }
