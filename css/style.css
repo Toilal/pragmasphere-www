@@ -354,6 +354,10 @@ ul.lead {
     margin-top: 90px;
 }
 
+.competence-item {
+    padding: 20px 5px;
+}
+
 .navbar-brand {
     font-size: 2em;
     font-weight: 300;
