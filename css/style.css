@@ -337,8 +337,13 @@ p {
 .lead {
     margin-top: 10px;
     margin-bottom: 10px;
-    font-size: 1.5em;
+    font-size: 1.4em;
     font-weight: 400;
+}
+
+ul.lead {
+    font-size: 1.2em;
+    font-weight: normal;
 }
 
 .intro-header .lead {
@@ -489,10 +494,6 @@ p {
 
 @media only screen and (max-height: 438px) and (max-width: 768px) {
     .button_down { display: none; }
-}
-
-li {
-    list-style-type: none;
 }
 
 .white {
