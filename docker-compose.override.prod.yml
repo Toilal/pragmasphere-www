@@ -1,0 +1,13 @@
+version: "2"
+networks:
+  nginx-proxy:
+    external: true
+services:
+  web:
+    restart: unless-stopped
+    environment:
+      VIRTUAL_HOST: www.pragmasphere.com
+      LETSENCRYPT_HOST: www.pragmasphere.com
+    networks:
+      - default
+      - nginx-proxy
